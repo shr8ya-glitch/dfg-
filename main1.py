@@ -1,13 +1,17 @@
-
-l=int(input("lower range:"))
-
-u=int(input("Upper range:"))
-
-for n in range(l,u+1):
-    if n>1:
-        for i in range(2,n):
-            if (n%i==0):
-                break
-            else:
-                print(n)
-                
+n=int(input("number"))
+s=0
+t=n
+while t>0:
+    d=t%10
+    s=s+d**3
+    t//=10
+if n==s:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+m=int(input("enter the number"))
+c=0
+while m>0:
+    m//=10
+    c=c+1
+print(c)

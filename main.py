@@ -1,5 +1,9 @@
-n=int(input("enter no.of rows"))
-for i in range(n):
-    for j in range (i+1):
-        print("*", end="")
-    print()
+s=input("word::")
+chr=input("character:")
+i=0
+c=0
+while (i<len(s)):
+    if s[i]==chr:
+        c=c+1
+    i=i+1
+print("repeated:",c)

@@ -1,7 +1,13 @@
-n=int(input("enter no.of rows"))
-num=1
-for i in range (1,n+1):
-     for j in range (1,i+1):
-         print(num, end=" ",)
-         num=num+1
-     print()
+
+l=int(input("lower range:"))
+
+u=int(input("Upper range:"))
+
+for n in range(l,u+1):
+    if n>1:
+        for i in range(2,n):
+            if (n%i==0):
+                break
+            else:
+                print(n)
+                
